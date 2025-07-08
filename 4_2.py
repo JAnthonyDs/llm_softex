@@ -31,10 +31,8 @@ def transcrever_audio(audio_bytes, api_key):
         return transcript
 
 if st.button("Transcrever"):
-    if not openai_api_key:
-        st.warning("Por favor, insira sua chave da API OpenAI.")
-    # elif not audio_file and not recorded_audio:
-    #     st.warning("Por favor, faça upload ou grave um áudio.")
+    if not audio_file and not recorded_audio:
+        st.warning("Por favor, faça upload ou grave um áudio.")
     else:
         with st.spinner("Transcrevendo..."):
             try:
