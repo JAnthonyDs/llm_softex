@@ -35,7 +35,7 @@ class CompanyDocumentChatbot:
         self.embeddings = OpenAIEmbeddings(openai_api_key=api_key)
         self.llm = ChatOpenAI(
             openai_api_key=api_key,
-            model_name="gpt-3.5-turbo",
+            model_name="gpt-4o-mini",
             temperature=0.1
         )
         self.vectorstore = None
@@ -298,7 +298,7 @@ def display_settings():
     
     model_name = st.sidebar.selectbox(
         "Modelo",
-        ["gpt-3.5-turbo", "gpt-4", "gpt-4-turbo-preview"],
+        ["gpt-4o-mini"],
         index=0
     )
     
