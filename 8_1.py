@@ -48,7 +48,7 @@ Código convertido ({linguagem_destino}):
         try:
             openai.api_key = openai_api_key
             resposta = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
+                model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": "Você é um especialista em tradução de código entre linguagens."},
                     {"role": "user", "content": prompt}
