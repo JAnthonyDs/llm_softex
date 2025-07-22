@@ -29,7 +29,7 @@ services:
     volumes:
       - .:/app
     environment:
-      - OPENAI_API_KEY=\"SUA_CHAVE_AQUI\"
+      - OPENAI_API_KEY=\"\"
 '''
     with open('docker-compose.yml', 'w', encoding='utf-8') as f:
         f.write(conteudo)
